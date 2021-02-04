@@ -1,0 +1,41 @@
+
+body {
+	width: 940px;
+	margin: auto;
+	background-color: black;
+}
+
+h1, h2, p {
+	text-align: center;
+	color: cadetblue;
+}
+
+section {
+	margin-bottom: 10px;
+	border: 2px solid darkmagenta;
+	/* align-content: center; */
+}
+
+button {
+	margin: 0px 20px;
+	padding: 10px 20px;
+	background-color: slategray;
+	color: ivory;
+	border-width: 3px;
+	border-radius: 5px;
+	border-style: outset;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+img {
+	width: 900px;
+	margin: 8px auto;
+	display: block;
+}
+
+/* .description {} */

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery basic functions</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(() => {
+				$('img').hide();
+				// show/hide/toggle
+				$('#show-button').click(() => {
+					$('#show_hide-img').show();
+				});
+				$('#hide-button').click(() => {
+					$('#show_hide-img').hide();
+				});
+				$('#toggle-button').click(() => {
+					$('#show_hide-img').toggle();
+				});
+				
+				// slideDown/slideUp/slideToggle
+				$('#slideDown-button').click(() => {
+					$('#slide-img').slideDown();
+				});
+				$('#slideUp-button').click(() => {
+					$('#slide-img').slideUp();
+				});
+				$('#slideToggle-button').click(() => {
+					$('#slide-img').slideToggle();
+				});
+				
+				// fadeIn/fadeOut/fadeToggle
+				$('#fadeIn-button').click(() => {
+					$('#fade-img').fadeIn();
+				});
+				$('#fadeOut-button').click(() => {
+					$('#fade-img').fadeOut();
+				});
+				$('#fadeToggle-button').click(() => {
+					$('#fade-img').fadeToggle();
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<h1>Basic jQuery Functions</h1>
+		<section id="show_hide">
+			<h2>.show() / .hide() / .toggle()</h2>
+			<div class="description">
+				<p id="show_hide-p">Click the button(s) to show or hide the image.</p>
+			</div>
+			<div class="button-container">
+				<button id="show-button">show</button>
+				<button id="hide-button">hide</button>
+				<button id="toggle-button">toggle</button>
+			</div>
+			<img id="show_hide-img" src="images/img1.jpg">
+		</section>
+		<section id="slide">
+			<h2>.slideDown() / .slideUp() / .slideToggle()</h2>
+			<div class="description">
+				<p id="slide-p">Click the button(s) to slide the image in & out of view</p>
+			</div>
+			<div class="button-container">
+				<button id="slideDown-button">slideDown</button>
+				<button id="slideUp-button">slideUp</button>
+				<button id="slideToggle-button">slideToggle</button>
+			</div>
+			<img id="slide-img" src="images/img2.jpg">
+		</section>
+		<section id="fade">
+			<h2>.fadeIn() / .fadeOut() / .fadeToggle()</h2>
+			<div class="description">
+				<p id="fade-p">Click the button(s) to fade the image in & out of view</p>
+			</div>
+			<div class="button-container">
+				<button id="fadeIn-button">fadeIn</button>
+				<button id="fadeOut-button">fadeOut</button>
+				<button id="fadeToggle-button">fadeToggle</button>
+			</div>
+			<img id="fade-img" src="images/img3.jpg">
+		</section>
+		<section id="addClass">
+			<h2>.addClass()</h2>
+			<button id="addClass-button">addClass</button>
+			<div class="description">
+				<p id="addClass-p">Click the button to add class 'color-red' to this paragraph</p>
+			</div>
+		</section>
+		<section id="before">
+			<h2>.before()</h2>
+			<button id="before-button">before</button>
+			<div class="description">
+				<p id="before-p"></p>
+			</div>
+		</section>
+		<section id="after">
+			<h2>.after()</h2>
+			<button id="after-button">after</button>
+			<div class="description">
+				<p id="after-p"></p>
+			</div>
+		</section>
+		<section id="append">
+			<h2>.append()</h2>
+			<button id="append-button">append</button>
+			<div class="description">
+				<p id="append-p"></p>
+			</div>
+		</section>
+		<section id="html">
+			<h2>.html()</h2>
+			<button id="html-button">html</button>
+			<div class="description">
+				<p id="html-p"></p>
+			</div>
+		</section>
+		<section id="attr">
+			<h2>.attr()</h2>
+			<button id="attr-button">attr</button>
+			<div class="description">
+				<p id="attr-p"></p>
+			</div>
+		</section>
+		<section id="val">
+			<h2>.val()</h2>
+			<button id="val-button">val</button>
+			<div class="description">
+				<p id="val-p"></p>
+			</div>
+		</section>
+		<section id="text">
+			<h2>.text()</h2>
+			<button id="text-button">text</button>
+			<div class="description">
+				<p id="text-p"></p>
+			</div>
+		</section>
+	</body>
+</html>
